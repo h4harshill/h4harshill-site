@@ -233,16 +233,32 @@
       display: flex;
       gap: 25px;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .footer-links a {
       color: rgba(255,255,255,0.5);
       text-decoration: none;
       transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .footer-links a:hover {
       color: white;
+    }
+
+    .footer-links img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover img {
+      transform: scale(1.1);
     }
 
     @media (max-width: 768px) {
@@ -355,9 +371,18 @@
     </div>
 
     <div class="footer-links">
-      <a href="https://www.youtube.com/h4harshill">YouTube</a>
-      <a href="https://www.instagram.com/h4harshill">Instagram</a>
-      <a href="https://twitter.com/h4harshill">X / Twitter</a>
+      <a href="https://www.youtube.com/h4harshill">
+        <img src="https://yt3.googleusercontent.com/IGhcdHT6Q89SuqDdMqZnLphFywrJQHNEJpnjxvZRN5sbsK2XEodUdeH09tldYQie_HfxlH3L=s160-c-k-c0x00ffffff-no-rj" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+      <a href="https://www.instagram.com/h4harshill">
+        <img src="https://instagram.famd16-1.fna.fbcdn.net/v/t51.82787-19/643581226_18164774830408826_2658925694511546273_n.jpg?stp=dst-jpg_s320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMxIn0&_nc_ht=instagram.famd16-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2gG1ojnRDQm7-Rg8RrAS_hY7A0eKIeCzxskVYsMCOhu2XahaGPzV7ZIEC9DyCnvpdEU&_nc_ohc=uMrl-NiwHXEQ7kNvwH1IYt7&_nc_gid=ShdJHCkIpfgMpRC00qQQcQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af53ffDOjskbxRrBbB6_4lAWzamWzinlbY-gEzv6xZ7iZw&oe=6A11A0C6&_nc_sid=8b3546" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+      <a href="https://twitter.com/h4harshill">
+        <img src="https://pbs.twimg.com/profile_images/1627860512884281346/CvPoDci__400x400.jpg" alt="X / Twitter">
+        <span>X</span>
+      </a>
     </div>
   </footer>
 
